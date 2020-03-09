@@ -63,7 +63,7 @@ global.attacktype=""
 global.typeadvantage=1
 
 ///SETS THE OVERALL GLOBAL PHASE TIMER
-global.phasetimer=5
+
 global.enemy1=0
 global.enemy2=0
 global.enemy3=0

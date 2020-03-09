@@ -18,6 +18,25 @@ draw_set_colour(c_black)
 draw_rectangle(1723,962,1847,1008,false)
 draw_set_colour(c_white)
 
+///DRAWS NEXT PAGE, PREVIOUS PAGE, MENU AND START GAME ICONS
+draw_set_font(font0)
+if global.unlockpagenumber=1{
+	draw_text(135,985,"MENU")
+	draw_text(1786,985,"NEXT")
+}
+else if global.unlockpagenumber=2{
+	draw_text(135,985,"BACK")
+	draw_text(1786,985,"NEXT")
+}
+else if global.unlockpagenumber=3{
+	draw_text(135,985,"BACK")
+	draw_text(1786,985,"NEXT")
+}
+else if global.unlockpagenumber=4{
+	draw_text(135,985,"BACK")
+	draw_text(1786,985,"START")
+}
+
 ///DRAW PAGE 1
 if global.unlockpagenumber=1{
 	///draws the text box explaining the unlocks screen
@@ -805,24 +824,7 @@ else if global.unlockpagenumber=4{
 	draw_text(1092,890,string(global.magdefnecklacelevel)+"/"+string(global.PUmagdefnecklace))
 }
 
-///DRAWS NEXT PAGE, PREVIOUS PAGE, MENU AND START GAME ICONS
-draw_set_font(font0)
-if global.unlockpagenumber=1{
-	draw_text(135,985,"MENU")
-	draw_text(1786,985,"NEXT")
-}
-else if global.unlockpagenumber=2{
-	draw_text(135,985,"BACK")
-	draw_text(1786,985,"NEXT")
-}
-else if global.unlockpagenumber=3{
-	draw_text(135,985,"BACK")
-	draw_text(1786,985,"NEXT")
-}
-else if global.unlockpagenumber=4{
-	draw_text(135,985,"BACK")
-	draw_text(1786,985,"START")
-}
+
 
 ///DRAWS PAGE 1 UNLOCKS DESCRIPTION
 draw_set_font(font2)
