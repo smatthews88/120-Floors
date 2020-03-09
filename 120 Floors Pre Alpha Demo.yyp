@@ -895,6 +895,14 @@
             }
         },
         {
+            "Key": "95b332c7-7081-43eb-aa12-b98e50181c2f",
+            "Value": {
+                "id": "cc1d3316-a0c8-48cd-9a62-8f86f71ba03a",
+                "resourcePath": "fonts\\textbox\\textbox.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "96bb214e-7730-440c-b476-8742c8627f3d",
             "Value": {
                 "id": "e9640100-0cc3-4c0f-9e2e-730c845b0535",
@@ -914,7 +922,7 @@
             "Key": "984720fe-ee38-4718-94f0-2dadaa5e0126",
             "Value": {
                 "id": "41c8e5da-06c4-4cf6-9495-2e721b180a09",
-                "resourcePath": "fonts\\font2\\font2.yy",
+                "resourcePath": "fonts\\newturn\\newturn.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -1263,6 +1271,14 @@
             }
         },
         {
+            "Key": "e7140d2b-4eb1-45de-adce-7be470f5c894",
+            "Value": {
+                "id": "5653d439-6b7d-4870-ad4e-db97d7f9b933",
+                "resourcePath": "views\\e7140d2b-4eb1-45de-adce-7be470f5c894.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "e72adf9a-be32-45f2-bc32-cba3975cf04e",
             "Value": {
                 "id": "d1e39377-d621-47f2-a5eb-f360877b7018",
@@ -1332,6 +1348,14 @@
                 "id": "bf2d0b96-8b61-4c3b-9134-bda57589b02a",
                 "resourcePath": "sprites\\spr_bleedskillbutton\\spr_bleedskillbutton.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f3fc3097-235b-41cc-ace1-c332598924b5",
+            "Value": {
+                "id": "397fc4c6-2054-438c-b7b2-45552c48b58c",
+                "resourcePath": "fonts\\floorlevel\\floorlevel.yy",
+                "resourceType": "GMFont"
             }
         },
         {

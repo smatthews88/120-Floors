@@ -1,11 +1,14 @@
 ///CONSTANT - SHOWS THE ATTACK BUTTONS AND HIGHLIGHTS ONE SELECTED
 if global.phase=3 or global.phase=4 or global.phase=5{
-attackbuttons()
+	draw_set_font(weaponbuttons)
+	attackbuttons()
 }
 
 ///DRAWS ENEMY SPRITES TO SCREEN
 enemysprites()
 
+///DRAWS FLOOR LEVEL TO SCREEN
+draw_set_font(floorlevel)
 if global.phase<54{
 	draw_set_colour(c_white)
 	draw_text(150,50,"FLOOR: "+string(global.towerlevel))
@@ -16,6 +19,7 @@ if global.phase<54{
 
 ///PHASE 2 -DRAW BOSS TEXT TO SCREEN
 if global.phase=2{
+	draw_set_font(textbox)
 	if global.towerlevel=20 or global.towerlevel=40 or global.towerlevel=60 or global.towerlevel=80 or global.towerlevel=100 or global.towerlevel=120{
 		draw_set_colour(c_white)
 		draw_rectangle(9,700,1909,1050,false)
@@ -36,12 +40,15 @@ if global.phase=2{
 
 ///PHASE 3 - DRAW PLAYER TURN TO SCREEN
 if global.phase=3{
+	draw_set_font(newturn)
 	draw_set_color(c_white)
-	draw_set_font(font2)
 	draw_text_transformed(960,800,"PLAYER TURN",2,2,0)
 }
 
+///DRAW POTENTIAL DAMAGE TO SCREEN///////////////////////////////////////////////////////////////////////////INCOMPLETE/////////////////////////////////////////
+
 if global.phase=5{
+	///ENEMY 1
 	if mouse_x>255 and mouse_x<383 and mouse_y>95 and mouse_y<287{
 		draw_text(500,100,+string((global.playeratk*(global.playermindam/100))-global.enemy1def)+"/"+string(global.playeratk-global.enemy1def))
 	}
@@ -49,6 +56,7 @@ if global.phase=5{
 
 ///PHASE 7 - DRAW ATTACK DAMAGE TO SCREEN
 if global.phase=7{
+	draw_set_font(textbox)
 	if global.attacktype="sword"{
 		global.attacktext="YOUR SWORD"
 	}
@@ -77,6 +85,7 @@ if global.phase=7{
 
 ///PHASE 9 - DISPLAY ENEMY FAINTED
 if global.phase=9{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -88,6 +97,7 @@ if global.phase=9{
 
 ///PHASE 11 - DISPLAY ALL ENEMIES ARE DEAD TEXT
 if global.phase=11{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -99,6 +109,7 @@ if global.phase=11{
 	
 ///PHASE 13 - DISPLAY BLEED OR BURN TEXT
 if global.phase=13{
+	draw_set_font(textbox)
 	if global.attacktype="sword" or global.attacktype="spear" or global.attacktype="axe"{
 		draw_set_colour(c_white)
 		draw_rectangle(9,700,1909,1050,false)
@@ -119,6 +130,7 @@ if global.phase=13{
 
 ///PHASE 16 - DISPLAY ATTACK DAMAGE
 if global.phase=16{
+	draw_set_font(textbox)
 	if global.attacktype="sword"{
 		global.attacktext="YOUR SWORD"
 	}
@@ -147,6 +159,7 @@ if global.phase=16{
 
 ///PHASE 18 - DISPLAY ENEMY FAINTED
 if global.phase=18{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -157,6 +170,7 @@ if global.phase=18{
 	
 ///PHASE 20 - DISPLAY ALL ENEMIES ARE DEAD TEXT
 if global.phase=20{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -168,6 +182,7 @@ if global.phase=20{
 
 ///PHASE 22 - DISPLAY BLEED OR BURN TEXT
 if global.phase=22{
+	draw_set_font(textbox)
 	if global.attacktype="sword" or global.attacktype="spear" or global.attacktype="axe"{
 		draw_set_colour(c_white)
 		draw_rectangle(9,700,1909,1050,false)
@@ -188,6 +203,7 @@ if global.phase=22{
 	
 ///PHASE 24 - DISPLAY PLAYER HEAL TEXT
 if global.phase=24{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -198,6 +214,7 @@ if global.phase=24{
 
 ///PHASE 26 - DISPLAY BLEED DAMAGE TEXT
 if global.phase=26{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -208,6 +225,7 @@ if global.phase=26{
 
 ///PHASE 28 - DISPLAY PLAYER IS DEAD TEXT
 if global.phase=28{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -218,6 +236,7 @@ if global.phase=28{
 
 ///PHASE 30 - DISPLAY BURN DAMAGE TEXT
 if global.phase=30{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -228,6 +247,7 @@ if global.phase=30{
 	
 ///PHASE 32 - DISPLAY PLAYER IS DEAD TEXT
 if global.phase=32{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -238,13 +258,14 @@ if global.phase=32{
 
 ///PHASE 33 - DISPLAY ENEMY TURN
 if global.phase=33{
+	draw_set_font(newturn)
 	draw_set_color(c_white)
-	draw_set_font(font2)
 	draw_text_transformed(960,800,"ENEMY TURN",2,2,0)
 }
 	
 ///PHASE 37 - REMOVE DAMAGE FROM PLAYER AND DISPLAY ATTACK DAMAGE TO SCREEN
 if global.phase=37{
+	draw_set_font(textbox)
 	enemyattacktext()
 	if global.dodge=0{
 		draw_set_colour(c_white)
@@ -267,6 +288,7 @@ if global.phase=37{
 
 ///PHASE 39 - DISPLAY PLAYER IS DEAD TEXT
 if global.phase=39{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -279,6 +301,7 @@ if global.phase=39{
 	
 ///PHASE 41 - DISPLAY PLAYER INFLICTED WITH BLEED OR BURN
 if global.phase=41{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -290,6 +313,7 @@ if global.phase=41{
 	
 ///PHASE 43 - DISPLAY BURN DAMAGE TEXT
 if global.phase=43{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -300,6 +324,7 @@ if global.phase=43{
 	
 ///PHASE 45 - DISPLAY ENEMY FAINTED
 if global.phase=45{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -310,6 +335,7 @@ if global.phase=45{
 
 ///PHASE 47 - DISPLAY ALL ENEMIES ARE DEAD TEXT
 if global.phase=47{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -320,6 +346,7 @@ if global.phase=47{
 
 ///PHASE 49 - DISPLAY BLEED DAMAGE TEXT
 if global.phase=49{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -330,6 +357,7 @@ if global.phase=49{
 
 ///PHASE 51 - DISPLAY ENEMY FAINTED
 if global.phase=51{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -340,6 +368,7 @@ if global.phase=51{
 
 ///PHASE 53 - DISPLAY ALL ENEMIES ARE DEAD TEXT
 if global.phase=53{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -350,6 +379,7 @@ if global.phase=53{
 
 ///PHASE 55 - DRAWS THE LEVEL DOWN INDICATORS TO THE SCREEN.
 if global.phase=55{
+	draw_set_font(textbox)
 	///DRAWS TEXT TO BOTTOM OF SCREEN EXPLAINING STAT LOSS
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
@@ -393,6 +423,7 @@ if global.phase=55{
 
 ///PHASE 56 - ///PHASE 56 - DISPLAY SKILL DOWN SELECT SCREEN
 if global.phase=56{
+	draw_set_font(textbox)
 	draw_set_colour(c_white)
 	draw_rectangle(9,700,1909,1050,false)
 	draw_set_colour(c_black)
@@ -456,6 +487,7 @@ if global.phase=57 and global.phase=58{
 
 ///PHASE 58 - DISPLAY THE TREASURE
 if global.phase=58{
+	draw_set_font(textbox)
 	if global.treasuretier=0{
 		draw_set_colour(c_white)
 		draw_rectangle(9,700,1909,1050,false)
@@ -476,6 +508,7 @@ if global.phase=58{
 
 ///PHASE 59 - SHOW THE ITEM YOU HAVE RECEIVED
 if global.phase=59{
+	draw_set_font(textbox)
 	///NO BOX
 	draw_set_colour(c_white)
 	draw_rectangle(9,600,209,700,false)

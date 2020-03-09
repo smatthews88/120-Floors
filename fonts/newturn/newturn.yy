@@ -2,7 +2,7 @@
     "id": "984720fe-ee38-4718-94f0-2dadaa5e0126",
     "modelName": "GMFont",
     "mvc": "1.1",
-    "name": "font2",
+    "name": "newturn",
     "AntiAlias": 1,
     "TTFName": "",
     "ascenderOffset": 0,

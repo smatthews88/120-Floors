@@ -1,5 +1,4 @@
 ///DRAW ENEMY HP TO SCREEN
-draw_set_font(weaponbuttons)
 if global.enemy1!=0{
 	draw_set_colour(c_white)
 	draw_rectangle(global.enemypos1x-64,global.enemypos1y+96,global.enemypos1x+63,global.enemypos1y+116,false)
@@ -34,7 +33,7 @@ if global.enemy2!=0{
 	else if global.enemy2type="axe" or global.enemy2type="earth"{
 			draw_set_colour(c_green)
 	}
-	if global.enemy1hp>0{
+	if global.enemy2hp>0{
 	draw_rectangle(global.enemypos2x-61,global.enemypos2y+96,(global.enemypos2x-64)+(global.enemy2hp*global.enemyhppercent),global.enemypos2y+113,false)
 	}
 	draw_set_colour(c_white)
@@ -53,7 +52,7 @@ if global.enemy3!=0{
 	else if global.enemy3type="axe" or global.enemy3type="earth"{
 			draw_set_colour(c_green)
 	}
-	if global.enemy1hp>0{
+	if global.enemy3hp>0{
 	draw_rectangle(global.enemypos3x-61,global.enemypos3y+96,(global.enemypos3x-64)+(global.enemy3hp*global.enemyhppercent),global.enemypos3y+113,false)
 	}
 	draw_set_colour(c_white)
@@ -72,7 +71,7 @@ if global.enemy4!=0{
 	else if global.enemy4type="axe" or global.enemy4type="earth"{
 			draw_set_colour(c_green)
 	}
-	if global.enemy1hp>0{
+	if global.enemy4hp>0{
 	draw_rectangle(global.enemypos4x-61,global.enemypos4y+96,(global.enemypos4x-64)+(global.enemy4hp*global.enemyhppercent),global.enemypos4y+113,false)
 	}
 	draw_set_colour(c_white)
@@ -91,7 +90,7 @@ if global.enemy5!=0{
 	else if global.enemy5type="axe" or global.enemy5type="earth"{
 			draw_set_colour(c_green)
 	}
-	if global.enemy1hp>0{
+	if global.enemy5hp>0{
 	draw_rectangle(global.enemypos5x-61,global.enemypos5y+96,(global.enemypos5x-64)+(global.enemy5hp*global.enemyhppercent),global.enemypos5y+113,false)
 	}
 	draw_set_colour(c_white)

@@ -7,7 +7,7 @@ bosslistcreate()
 global.enemyhppercent=3.1
 
 
-global.phase=1
+global.phase=54
 
 
 
