@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "85f3ada9-1c37-4b45-b306-dca49f0c91c5",
+            "Value": {
+                "id": "3591eaa0-59f6-4121-9bbe-42bb0fc5aee8",
+                "resourcePath": "sprites\\test21\\test21.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8668ae2d-a361-4786-b72b-e11e6fc7188b",
             "Value": {
                 "id": "a4493458-34b0-49d2-b70f-e52ab1d62fd9",
@@ -1199,6 +1207,14 @@
             }
         },
         {
+            "Key": "d0618ef2-3f21-41a1-958b-8e206d62eb8f",
+            "Value": {
+                "id": "946984dd-224e-4fb3-8f0a-d825310324c1",
+                "resourcePath": "sprites\\sprite6311\\sprite6311.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d6a09a1f-3c61-44c3-b7f5-b4dacfd08d39",
             "Value": {
                 "id": "72dfa7c7-e3da-4588-85cb-0f76e89c18b8",
@@ -1339,6 +1355,14 @@
             "Value": {
                 "id": "c2f55972-b3f7-4d29-9caf-71ae166978fb",
                 "resourcePath": "sprites\\spr_spearskillbutton\\spr_spearskillbutton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eca05fed-fb80-4e58-a311-5cf993f4deb6",
+            "Value": {
+                "id": "2a19fddf-fbe3-4eee-906d-28a44948a3f6",
+                "resourcePath": "sprites\\sprite631\\sprite631.yy",
                 "resourceType": "GMSprite"
             }
         },

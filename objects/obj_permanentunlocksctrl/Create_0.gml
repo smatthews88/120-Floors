@@ -1,4 +1,3 @@
-global.justloaded=0
 
 ///SETS THE GLOBAL PERMANENT UNLOCKS
 /*global.PUswordskill=5

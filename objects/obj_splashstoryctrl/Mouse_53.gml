@@ -1,3 +1,5 @@
+
+
 if (!file_exists("PU.ini")){
 	ini_open("PU.ini")
 	ini_write_real("PU","global.PUsworditem",0)

@@ -300,11 +300,11 @@ else if global.treasure=23{
 	global.currentringlevel=global.magatkringlevel
 }
 else if global.treasure=24{
-	global.magdefringtier+=1
+	global.madefringtier+=1
 	global.magdefringlevel=global.magdefringtier
 	global.playermagdef+=global.magdefringlevel*2
 	global.playerdef-=global.magdefringlevel*2
-	global.currentring="MAGIC ATTACK RING"
+	global.currentring="MAGIC DEFENSE RING"
 	global.currentringlevel=global.magdefringlevel
 }
 else if global.treasure=25{
@@ -350,7 +350,7 @@ else if global.treasure=30{
 	global.magdefnecklacelevel=global.magdefnecklacetier
 	global.playermagdef+=global.magdefnecklacelevel*2
 	global.playerdef-=global.magdefnecklacelevel*2
-	global.currentnecklace="MAGIC ATTACK NECKLACE"
+	global.currentnecklace="MAGIC DEFENSE NECKLACE"
 	global.currentnecklacelevel=global.magdefnecklacelevel
 }
 

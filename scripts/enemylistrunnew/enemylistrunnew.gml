@@ -72,9 +72,6 @@ else{
 	}
 	///ENEMY SLOT 2
 	global.enemynum2=irandom_range(1,6)
-	while global.enemynum2=global.enemynum1{
-		global.enemynum2=irandom_range(1,6)
-	}
 	if global.enemynum2=1{
 		global.enemy2=spr_swordenemy
 	}
@@ -95,9 +92,6 @@ else{
 	}
 	///ENEMY SLOT 3
 	global.enemynum3=irandom_range(1,6)
-	while global.enemynum3=global.enemynum2 or global.enemynum3=global.enemynum1{
-		global.enemynum3=irandom_range(1,6)
-	}
 	if global.enemynum3=1{
 		global.enemy3=spr_swordenemy
 	}
@@ -118,9 +112,6 @@ else{
 	}
 	///ENEMY SLOT 4
 	global.enemynum4=irandom_range(1,6)
-	while global.enemynum4=global.enemynum3 or global.enemynum4=global.enemynum2 or global.enemynum4=global.enemynum1{
-		global.enemynum4=irandom_range(1,6)
-	}
 	if global.enemynum4=1{
 		global.enemy4=spr_swordenemy
 	}
@@ -141,9 +132,6 @@ else{
 	}
 	///ENEMY SLOT 5
 	global.enemynum5=irandom_range(1,6)
-	while global.enemynum5=global.enemynum4 or global.enemynum5=global.enemynum3 or global.enemynum5=global.enemynum2 or global.enemynum5=global.enemynum1{
-		global.enemynum5=irandom_range(1,6)
-	}
 	if global.enemynum5=1{
 		global.enemy5=spr_swordenemy
 	}

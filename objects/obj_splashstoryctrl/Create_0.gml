@@ -1,2 +1,3 @@
 ///SETS THE TEXT SPEED
-global.phasetimer=180
+global.phasetimer=1
+
