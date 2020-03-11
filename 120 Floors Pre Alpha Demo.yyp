@@ -282,7 +282,7 @@
             "Key": "2c9e9ee3-02bd-422a-8e6f-936512c64347",
             "Value": {
                 "id": "3d757a22-e369-4dfa-955d-ad38562916b2",
-                "resourcePath": "sprites\\spr_swordenemy\\spr_swordenemy.yy",
+                "resourcePath": "sprites\\spr_swordenemy2\\spr_swordenemy2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -642,7 +642,7 @@
             "Key": "660c51fe-13a9-47f6-9267-c6dc422f7b90",
             "Value": {
                 "id": "73e8a6c6-bca5-4933-a205-08187a51f6f6",
-                "resourcePath": "sprites\\spr_swordenemy1\\spr_swordenemy1.yy",
+                "resourcePath": "sprites\\spr_swordenemy\\spr_swordenemy.yy",
                 "resourceType": "GMSprite"
             }
         },
