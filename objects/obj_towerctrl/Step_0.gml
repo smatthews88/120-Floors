@@ -1,5 +1,187 @@
 ///PHASE 1 - CREATES A NEW SET OF ENEMIES (SKIPPED THE FIRST TIME YOU ENTER TOWER AS CREATED ON CREATION.
 if global.phase=1{
+	///CREATES BACKGROUNDS
+global.back_id = layer_background_get_id("Background")
+if global.towerlevel=1{
+	layer_background_sprite(global.back_id,spr_floor1bg)
+}
+else if global.towerlevel=2{
+	layer_background_sprite(global.back_id,spr_floor2bg)
+}
+else if global.towerlevel=3{
+layer_background_sprite(global.back_id,spr_floor3bg)
+}
+else if global.towerlevel=4{
+	layer_background_sprite(global.back_id,spr_floor4bg)
+}
+else if global.towerlevel=5{
+	layer_background_sprite(global.back_id,spr_floor5bg)
+}
+else if global.towerlevel=6{
+	layer_background_sprite(global.back_id,spr_floor6bg)
+}
+else if global.towerlevel=7{
+	layer_background_sprite(global.back_id,spr_floor7bg)
+}
+else if global.towerlevel=8{
+	layer_background_sprite(global.back_id,spr_floor8bg)
+}
+else if global.towerlevel=9{
+	layer_background_sprite(global.back_id,spr_floor9bg)
+}
+else if global.towerlevel=10{
+	layer_background_sprite(global.back_id,spr_floor10bg)
+}
+else if global.towerlevel=11{
+	layer_background_sprite(global.back_id,spr_floor11bg)
+}
+else if global.towerlevel=12{
+	layer_background_sprite(global.back_id,spr_floor12bg)
+}
+else if global.towerlevel=13{
+	layer_background_sprite(global.back_id,spr_floor13bg)
+}
+else if global.towerlevel=14{
+	layer_background_sprite(global.back_id,spr_floor14bg)
+}
+else if global.towerlevel=15{
+	layer_background_sprite(global.back_id,spr_floor15bg)
+}
+else if global.towerlevel=16{
+	layer_background_sprite(global.back_id,spr_floor16bg)
+}
+else if global.towerlevel=17{
+	layer_background_sprite(global.back_id,spr_floor17bg)
+}
+else if global.towerlevel=18{
+	layer_background_sprite(global.back_id,spr_floor18bg)
+}
+else if global.towerlevel=19{
+	layer_background_sprite(global.back_id,spr_floor19bg)
+}
+else if global.towerlevel=20{
+	layer_background_sprite(global.back_id,spr_floor20bg)
+}
+else if global.towerlevel=21{
+	layer_background_sprite(global.back_id,spr_floor21bg)
+}
+else if global.towerlevel=22{
+	layer_background_sprite(global.back_id,spr_floor22bg)
+}
+else if global.towerlevel=23{
+	layer_background_sprite(global.back_id,spr_floor23bg)
+}
+else if global.towerlevel=24{
+	layer_background_sprite(global.back_id,spr_floor24bg)
+}
+else if global.towerlevel=25{
+	layer_background_sprite(global.back_id,spr_floor25bg)
+}
+else if global.towerlevel=26{
+	layer_background_sprite(global.back_id,spr_floor26bg)
+}
+else if global.towerlevel=27{
+	layer_background_sprite(global.back_id,spr_floor27bg)
+}
+else if global.towerlevel=28{
+	layer_background_sprite(global.back_id,spr_floor28bg)
+}
+else if global.towerlevel=29{
+	layer_background_sprite(global.back_id,spr_floor29bg)
+}
+else if global.towerlevel=30{
+	layer_background_sprite(global.back_id,spr_floor30bg)
+}
+else if global.towerlevel=31{
+	layer_background_sprite(global.back_id,spr_floor31bg)
+}
+else if global.towerlevel=32{
+	layer_background_sprite(global.back_id,spr_floor32bg)
+}
+else if global.towerlevel=33{
+	layer_background_sprite(global.back_id,spr_floor33bg)
+}
+else if global.towerlevel=34{
+	layer_background_sprite(global.back_id,spr_floor34bg)
+}
+else if global.towerlevel=35{
+	layer_background_sprite(global.back_id,spr_floor35bg)
+}
+else if global.towerlevel=36{
+	layer_background_sprite(global.back_id,spr_floor36bg)
+}
+else if global.towerlevel=37{
+	layer_background_sprite(global.back_id,spr_floor37bg)
+}
+else if global.towerlevel=38{
+	layer_background_sprite(global.back_id,spr_floor38bg)
+}
+else if global.towerlevel=39{
+	layer_background_sprite(global.back_id,spr_floor39bg)
+}
+else if global.towerlevel=40{
+	layer_background_sprite(global.back_id,spr_floor40bg)
+}
+else if global.towerlevel=41{
+	layer_background_sprite(global.back_id,spr_floor41bg)
+}
+else if global.towerlevel=42{
+	layer_background_sprite(global.back_id,spr_floor42bg)
+}
+else if global.towerlevel=43{
+	layer_background_sprite(global.back_id,spr_floor43bg)
+}
+else if global.towerlevel=44{
+	layer_background_sprite(global.back_id,spr_floor44bg)
+}
+else if global.towerlevel=45{
+	layer_background_sprite(global.back_id,spr_floor45bg)
+}
+else if global.towerlevel=46{
+	layer_background_sprite(global.back_id,spr_floor46bg)
+}
+else if global.towerlevel=47{
+	layer_background_sprite(global.back_id,spr_floor47bg)
+}
+else if global.towerlevel=48{
+	layer_background_sprite(global.back_id,spr_floor48bg)
+}
+else if global.towerlevel=49{
+	layer_background_sprite(global.back_id,spr_floor49bg)
+}
+else if global.towerlevel=50{
+	layer_background_sprite(global.back_id,spr_floor50bg)
+}
+else if global.towerlevel=51{
+	layer_background_sprite(global.back_id,spr_floor51bg)
+}
+else if global.towerlevel=52{
+	layer_background_sprite(global.back_id,spr_floor52bg)
+}
+else if global.towerlevel=53{
+	layer_background_sprite(global.back_id,spr_floor53bg)
+}
+else if global.towerlevel=54{
+	layer_background_sprite(global.back_id,spr_floor54bg)
+}
+else if global.towerlevel=55{
+	layer_background_sprite(global.back_id,spr_floor55bg)
+}
+else if global.towerlevel=56{
+	layer_background_sprite(global.back_id,spr_floor56bg)
+}
+else if global.towerlevel=57{
+	layer_background_sprite(global.back_id,spr_floor57bg)
+}
+else if global.towerlevel=58{
+	layer_background_sprite(global.back_id,spr_floor58bg)
+}
+else if global.towerlevel=59{
+	layer_background_sprite(global.back_id,spr_floor59bg)
+}
+else if global.towerlevel>=60{
+	layer_background_sprite(global.back_id,spr_floor60bg)
+}
 	enemylistrunnew()
 	global.phase=2
 }

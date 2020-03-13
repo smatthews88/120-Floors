@@ -300,7 +300,7 @@ else if global.treasure=23{
 	global.currentringlevel=global.magatkringlevel
 }
 else if global.treasure=24{
-	global.madefringtier+=1
+	global.magdefringtier+=1
 	global.magdefringlevel=global.magdefringtier
 	global.playermagdef+=global.magdefringlevel*2
 	global.playerdef-=global.magdefringlevel*2
